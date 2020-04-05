@@ -7,6 +7,6 @@ COPY build assemble ./
 
 # Add ignore information from Github's collection of ignore files
 # License: CC0 1.0 Universal
-RUN curl "https://raw.githubusercontent.com/github/gitignore/master/LICENSE" >> ignore.LICENSE && \
-    curl "https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore" > ignore && \
+RUN curl -sL "https://raw.githubusercontent.com/github/gitignore/master/LICENSE" >> ignore.LICENSE && \
+    curl -sL "https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore" > ignore && \
     echo ".dockerignore" >> ignore
