@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -eu
+
+cd $INTO_SOURCE_DIR
+echo "Installing dependencies ..."
+yarn
+
+echo "Building CRA application ..."
+yarn build
+
+echo "Publishing artifacts ..."
+mv build/* $INTO_ARTIFACT_DIR/

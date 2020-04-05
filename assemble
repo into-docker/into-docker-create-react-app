@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -eu
+
+rm /usr/share/nginx/html/index.html
+mv $INTO_ARTIFACT_DIR/* /usr/share/nginx/html
