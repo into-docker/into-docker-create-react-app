@@ -4,7 +4,7 @@ set -eu
 
 cd $INTO_SOURCE_DIR
 echo "Installing dependencies ..."
-npm install
+npm ci
 
 echo "Building CRA application ..."
 npm run build
