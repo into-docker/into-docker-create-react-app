@@ -4,10 +4,10 @@ set -eu
 
 cd $INTO_SOURCE_DIR
 echo "Installing dependencies ..."
-npm ci
+${INSTALL_COMMAND}
 
 echo "Building CRA application ..."
-npm run build
+${BUILD_COMMAND}
 
 echo "Publishing artifacts ..."
 mv build/* $INTO_ARTIFACT_DIR/

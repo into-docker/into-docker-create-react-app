@@ -1,0 +1,2 @@
+INSTALL_COMMAND=yarn --frozen-lockfile
+BUILD_COMMAND=yarn build

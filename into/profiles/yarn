@@ -1,0 +1,2 @@
+INSTALL_COMMAND=yarn
+BUILD_COMMAND=yarn build

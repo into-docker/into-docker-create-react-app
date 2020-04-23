@@ -1,0 +1,2 @@
+INSTALL_COMMAND=npm ci
+BUILD_COMMAND=npm run build
