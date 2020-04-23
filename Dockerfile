@@ -14,10 +14,13 @@ LABEL org.opencontainers.image.created="${BUILD_DATE}"
 LABEL org.into-docker.runner-image="nginx:1.17.9-alpine"
 
 WORKDIR /into
+ENV HOME=/into/home
 
-# Add ignore information from Github's collection of ignore files
-# License: CC0 1.0 Universal
-RUN curl -sL "https://raw.githubusercontent.com/github/gitignore/master/LICENSE" > ignore.LICENSE && \
+RUN mkdir home && \
+    chmod a+w home && \
+    # Add ignore information from Github's collection of ignore files
+    # License: CC0 1.0 Universal
+    curl -sL "https://raw.githubusercontent.com/github/gitignore/master/LICENSE" > ignore.LICENSE && \
     curl -sL "https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore" > ignore
 
 COPY into/ .
