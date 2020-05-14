@@ -15,8 +15,19 @@ applications relying on [npm][npm].
 Run the following in the root directory of your project:
 
 ```sh
-into -t <repository>:<tag> intodocker/create-react-app .
+into build -t <repository>:<tag> intodocker/create-react-app .
 ```
+
+## Build Profiles
+
+The following build profiles that can be used via the `--profile` CLI flag:
+
+| Profile   | Install Command          | Build Command   |
+| --------- | ------------------------ | --------------- |
+| `default` | `npm install`            | `npm run build` |
+| `ci`      | `npm ci`                 | `npm run build` |
+| `yarn`    | `yarn`                   | `yarn build`    |
+| `yarn-ci` | `yarn --frozen-lockfile` | `yarn build`    |
 
 ## License
 
