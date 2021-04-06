@@ -4,3 +4,5 @@
 Dockerfile
 .dockerignore
 tags
+package.json
+yarn.lock
