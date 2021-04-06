@@ -1,7 +1,7 @@
 # into-docker-create-react-app
 
-[![](https://images.microbadger.com/badges/version/intodocker/create-react-app.svg)](https://hub.docker.com/r/intodocker/create-react-app)
-[![](https://images.microbadger.com/badges/image/intodocker/create-react-app.svg)](https://hub.docker.com/r/intodocker/create-react-app)
+[![](https://img.shields.io/docker/v/intodocker/create-react-app?sort=semver)](https://hub.docker.com/r/intodocker/create-react-app)
+[![](https://img.shields.io/docker/image-size/intodocker/create-react-app?sort=semver)](https://hub.docker.com/r/intodocker/create-react-app)
 
 This is an [into-docker][into] builder image for [create-react-app][cra]
 applications relying on [npm][npm].
